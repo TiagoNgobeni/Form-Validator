@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(Images/back.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-container {
+    width: 100%;
+    padding: 10%;
+    font-size: 1.5rem;
+}
+
+.right-container {
+    width: 80%;
+}
+
+.right-container #top-btn {
+    background-color: rgb(32, 0, 128);
+    padding: 3%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: none;
+    width: 80%;
+    color: #fff;
+}
+
+.right-container form {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: auto;
+    padding: 5%;
+}
+
+.right-container form input {
+    display: block;
+    border: 2px solid brown;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: rgb(124, 122, 122);
+    font-weight: bold;
+}
+
+.right-container #bottom-btn {
+    width: 100%;
+    background-color: rgb(8, 170, 132);
+    border: none;
+    border-radius: 5px;
+    padding: 3%;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+    transition: all .6s ease-in;
+}
+.right-container #bottom-btn:hover {
+    border: 1px solid rgb(8, 170, 132);
+    background: transparent;
+    color: rgb(8, 170, 132);
+}
+
+.right-container form span {
+    font-size: 15px;
+}
+
+.right-container form span a {
+    text-decoration: none;
+    color: brown;
+}
+
+.error-message {
+    color: brown;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    top: -30px;
+}
+
+@media (max-width: 2560px) {
+    .left-container {
+        font-size: 4rem;
+    }
+    .left-container h1 {
+        margin-bottom: 5%;
+    }
+    .right-container #top-btn {
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    .right-container form {
+        width: 100%;
+    }
+    .right-container form input {
+        padding: 30px;
+        font-size: 2.5rem;
+    }
+    .right-container form span {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 1440px) {
+    .left-container {
+        font-size: 2.5rem;
+    }
+    .left-container h1 {
+        margin-bottom: 5%;
+    }
+    .right-container #top-btn {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .right-container form {
+        width: 100%;
+    }
+    .right-container form input {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+    .right-container form span {
+        font-size: 1.2rem;
+    }
+    .error-message {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .left-container {
+        font-size: 1.8rem;
+    }
+    .left-container h1 {
+        margin-bottom: 5%;
+    }
+    .right-container #top-btn {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .right-container form {
+        width: 100%;
+    }
+    .right-container form input {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .right-container form span {
+        font-size: 0.8rem;
+    }
+    .right-container form .error-message {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+    }
+    .right-container {
+        text-align: center;
+        align-items: center;
+        margin: auto;
+    }
+    .right-container form {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .left-container {
+        font-size: 15px;
+    }
+    .right-container #top-btn {
+        font-size: 10px;
+    }
+    .right-container form input {
+        padding: 5px;
+        font-size: 15px;
+    }
+    .right-container form .error-message {
+        font-size: 12px;
+    }
+    .right-container form span {
+        font-size: 13px;
+    }
+}
