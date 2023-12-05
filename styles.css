@@ -145,6 +145,32 @@ input::placeholder {
     }
 }
 
+@media (max-width: 1200px) {
+    .left-container {
+        font-size: 2rem;
+    }
+    .left-container h1 {
+        margin-bottom: 5%;
+    }
+    .right-container #top-btn {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .right-container form {
+        width: 100%;
+    }
+    .right-container form input {
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .right-container form span {
+        font-size: 1rem;
+    }
+    .right-container form .error-message {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .left-container {
         font-size: 1.8rem;
@@ -176,16 +202,20 @@ input::placeholder {
         grid-template-columns: 1fr;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 100%;
         text-align: center;
     }
     .right-container {
         text-align: center;
         align-items: center;
         margin: auto;
+        margin-bottom: 50px;
     }
     .right-container form {
-        margin-bottom: 20px;
+        /* padding-bottom: 20px; */
+        height: auto;
+        margin: auto;
+
     }
 }
 
